@@ -18,3 +18,10 @@ _quote-previous-word-in-double() {
   modify-current-argument '${(qqq)${(Q)ARG}}'
   zle vi-forward-blank-word
 }
+
+# ^ is usually control
+# ^[ actually means Escape or Alt (or meta, if you like emacs)
+bindkey "^[b" backward-word # left arrow
+bindkey "^[f" forward-word  # right arrow
+#bindkey "^[[A" beginning-of-line # Up
+#bindkey "^[[B" down-line-or-beginning-search # Down
