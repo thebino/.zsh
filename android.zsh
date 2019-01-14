@@ -15,6 +15,7 @@ export PATH=${PATH}:$ANDROID_NDK_HOME
 export PATH=${PATH}:$ANDROID_HOME/tools
 export PATH=${PATH}:$ANDROID_HOME/platform-tools
 export PATH=${PATH}:$ANDROID_HOME/build-tools/28.0.2
+export PATH=${PATH}:$ANDROID_HOME/apktool
 
 # https://github.com/pxb1988/dex2jar
 alias dex2jar='sh $ANDROID_HOME/dex2jar-2.0/d2j-dex2jar.sh -f $1'
