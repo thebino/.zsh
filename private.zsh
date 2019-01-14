@@ -1,5 +1,14 @@
 alias home='ssh -p 22 root@domain.com'
-alias socks='ssh -p 22 -D 8080 root@domain.com'
+
+# enable 'AllowTcpForwarding' & 'PermitOpen' in /etc/sshd_config
+alias socks='ssh -p 22 -D 8080 -C -N root@domain.com'
+
+
+# local port 80 (webserver) accessible to remote via port 9000 http://localhost:9000
+# 9000 = remote port (must be accessible on the remote server)
+# -C (compression), -N (no remote commands), -f (background process)
+alias tunnel='ssh -p 22 user@domain.com -fNC -R 9000:localhost:80'
+alias tunnel2='ssh -p 22 user@domain.com -fNC -R 9000:192.168.178.101:80'
 
 
 function trustCaCert() {
