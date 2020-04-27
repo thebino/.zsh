@@ -28,3 +28,6 @@ export PATH=${PATH}:$ANDROID_HOME/apktool
 
 # https://github.com/pxb1988/dex2jar
 alias dex2jar='sh $ANDROID_HOME/dex2jar-2.0/d2j-dex2jar.sh -f $1'
+
+
+alias startDemo='adb shell settings put global window_animation_scale 0.0 && adb shell settings put global transition_animation_scale 0.0 && adb shell settings put global window_animation_scale 0.0 && adb shell settings put global animator_duration_scale 0.0 && adb shell settings put secure show_ime_with_hard_keyboard 0'
