@@ -24,7 +24,6 @@ plugins=(
   git
   ant
   github
-  terminalapp
   history-substring-search
   adb
 )
