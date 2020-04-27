@@ -3,7 +3,7 @@ alias wifidebugging='adb tcpip 5555 && adb connect 172.16.1.51:5555'
 alias wificonnect='adb connect 172.16.1.43:5555'
 
 alias dhu='adb forward tcp:5277 tcp:5277 && sleep 2 && $ANDROID_HOME/extras/google/auto/desktop-head-unit '
-
+alias kill_gradle_cache='find ~/.gradle -type f -name "*.lock" | while read f; do rm $f; done'
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_AVD_HOME=$HOME/.android/avd
