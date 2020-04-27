@@ -27,7 +27,6 @@ plugins=(
   terminalapp
   history-substring-search
   adb
-  zsh-syntax-highlighting
 )
 
 
